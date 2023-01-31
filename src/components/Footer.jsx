@@ -6,8 +6,15 @@ const Footer = () => {
   return (
     <div className="mt-24 w-full">
       <div className="flex gap-8 sm:mb-0 mb-4 sm:flex-row flex-col justify-between items-center py-6">
-        <p className="text-2xl font-semibold ">Pavitar Sharma</p>
-        <p className="font-semibold">@{new Date().getFullYear()}.All Rights Reserved</p>
+        <div>
+          <p className="text-2xl font-semibold sm:text-start text-center">Pavitar Sharma</p>
+          <p className="font-semibold text-sm mt-2 font-mono">
+            Email: <span className="font-normal">pavitarsharma144@gmail.com</span>
+          </p>
+        </div>
+        <p className="font-semibold">
+          @{new Date().getFullYear()}.All Rights Reserved
+        </p>
         <div className="flex gap-6">
           <a
             href="https://www.linkedin.com/in/pavitar-sharma-918a3b19a"

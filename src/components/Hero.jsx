@@ -4,6 +4,7 @@ import {
   AiFillLinkedin,
   AiOutlineTwitter,
 } from "react-icons/ai";
+import myResume from "../assets/Pavitar_Sharma_Resume.pdf";
 import hero from "../assets/hero.jpeg";
 import { HiArrowNarrowRight } from "react-icons/hi";
 const Hero = () => {
@@ -26,7 +27,7 @@ const Hero = () => {
           </a>
         </div>
 
-        <div className="md:max-w-[450px] md:order-1 order-3 ">
+        <div className="md:max-w-[450px] md:order-1 order-3 flex flex-col">
           <h1 className="sm:text-3xl text-xl font-bold">Pavitar Sharma</h1>
 
           <div className="flex sm:flex-row flex-col sm:items-center sm:gap-4 gap-1 my-2 ">
@@ -39,12 +40,19 @@ const Hero = () => {
             occasionally designing) exceptional digital experiences. Currently,
             I’m focused on building responsive full-stack web applications.
           </p>
+          <div className="mt-8">
+            <a
+              href={myResume}
+              target="_blank"
+              download="Pavitar_Sharma_Resume"
+              className="bg-[#0a192f] text-white py-5 px-4 rounded mt-5"
+            >
+              Download Resume{" "}
+            </a>
+          </div>
         </div>
 
-        <div
-          className="hero-image lg:w-[200px] lg:h-[200px] w-[200px] h-[200px]  md:order-3 rounded-full"
-          
-        ></div>
+        <div className="hero-image lg:w-[200px] lg:h-[200px] w-[200px] h-[200px]  md:order-3 rounded-full"></div>
       </div>
     </div>
   );
